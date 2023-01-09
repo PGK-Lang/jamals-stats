@@ -1,12 +1,13 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Drivers"
+    url: /drivers
+  - title: "Schedule"
+    url: /schedule
+  - title: "Circuits"
+    url: /circuits
+  - title: "Constructors"
+    url: /constructors
+  - title: "About"
+    url: https://media.distractify.com/brand-img/3JWAIT4PU/2160x1130/jamale-meme-tiktok-1666816782403.jpg
+    
