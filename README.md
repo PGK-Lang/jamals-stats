@@ -1,4 +1,4 @@
-# Jamal's Stats
+# [Jamal's Stats](https://pgk-lang.github.io/jamals-stats/)
 🏎️ Exquisite F1 statistics from the Formula One API
 
 ## CPT Ideas
