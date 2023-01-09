@@ -75,3 +75,4 @@ defaults:
     <img src="https://github.com/PGK-Lang/jamal/blob/gh-pages/_images/Circuit_Pedralbes.png?raw=true" alt="Pedralbes" style="width:100%">
     <blockquote>Circuit Pedralbes</blockquote>
   </div>
+</div>
