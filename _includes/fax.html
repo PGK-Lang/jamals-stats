@@ -1,0 +1,14 @@
+<p><button onclick = "getInfo('General')">Get a General F1 Fact</button></p>
+<p id = "General" >F1 Facts</p>
+<p><button onclick = "getInfo('Constructors')">Get a General Fact About Constructors and their Championships</button></p>
+<p id = "Constructors">Championship</p>
+
+<script>
+    function getInfo(dic){
+        let facts = {"General" : ["Formula 1 cars are much faster than NASCAR", "An F1 car can cost about $20 Million!", "Teams in F1 can use up to three engines per season!"], "Constructors" : ["Ferrari has won 16 championships!", "Williams has won 9 championships!", "McLaren has won 8 Championships!"]};
+        let ret = facts[dic][Math.floor(Math.random()*facts[dic].length)];
+        console.log(ret);
+        document.getElementById(dic).innerHTML = ret;
+    }
+
+</script>
