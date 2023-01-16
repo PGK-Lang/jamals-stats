@@ -1,0 +1,39 @@
+<script>
+    function validate(){
+        console.log("something happened");
+
+    }
+
+
+    function SaveData(){
+        if (validate()){
+            console.log("Saved!");
+        }
+        // would allow user to save data to an API. We have no way of storing, as due to security constraits HTML cannot write to a local file
+        // Make post request here, formatted w/ data     
+    }
+
+</script>
+<style>
+    .blockquote {
+        color: red;
+        font-weight: bold;
+    }
+
+</style>
+
+<form onsubmit="SaveData()">
+    <h3> Name </h3>
+    <input placeholder="Enter Name Here">
+    <h3> Username </h3>
+    <input placeholder="Enter Name Here">
+    <br>
+    <br>
+    <h3> Password </h3>
+    <input placeholder="Enter Password" id="Pass1">
+    <br>
+    <input placeholder="Confirm Password" id="Pass1">
+    <br>
+    <button id="Submit">Submit</button>
+    <blockquote hidden="False">Error! You have placed incorrect information!</blockquote>
+</form>
