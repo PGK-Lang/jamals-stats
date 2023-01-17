@@ -1,0 +1,50 @@
+<body>
+        <p>Start your Quiz</p>
+		
+        <img id="questions" src = "">
+        <br>
+        <br>
+		<input placeholder="Answer" id="answers">
+        <br>
+        <br>
+        
+        <button onclick = "setAnswers()"> Change Answers </button>
+		
+		<script>
+			var index = 1;
+            let constructors = ["https://pbs.twimg.com/media/CX4HI1rW8AAc4dS.png", 
+                "https://assets.turbologo.com/blog/en/2019/10/19084952/ferrari-logo-illustration-958x575.jpg", 
+                "https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/logo.img.jpg/1582638425211.jpg",
+                 "https://pbs.twimg.com/profile_images/1349458185866899473/J2B5XeEm_400x400.jpg", "https://www.formula1.com/content/fom-website/en/teams/McLaren/_jcr_content/logo.img.jpg/1644831223911.jpg"];
+            let answers = ["red bull", "ferrari", "mercedes", "ka", "mclaren"];
+
+            document.getElementById("questions").src =
+					constructors[index-1];
+            document.getElementById("answers").innerHTML =
+					answers[index-1];
+            
+            q = constructors[index-1];
+            a = answers[index-1];
+            function checkAnswers(question, answer){
+                if (question.toLowerCase() === answer){return true;}
+                else {return false;}
+            }
+
+            function setAnswers(){
+                let guess = document.getElementById("answers").value;
+                if (checkAnswers(guess, a)){
+                    document.getElementById("questions").src =
+					constructors[index];
+                    
+                    q = constructors[index];
+                    a = answers[index];
+                    var x = document.getElementById("answers")
+                    x.value = "";
+                    index ++; 
+                }
+                else {
+
+                }
+            }
+		</script>
+</body>
